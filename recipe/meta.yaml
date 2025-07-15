@@ -1,5 +1,5 @@
 {% set name = "mockmpi" %}
-{% set version = "0.8.1" %}
+{% set version = "0.8.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/rmjarvis/MockMPI/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: a7161711520f8dca288e3aa2aa8c8a5dbff0c3020feefb7df464d72598634529
+  sha256: 18e1d3bdc348bd6abb748993e1e81a6e1e7d7d7428a3c72ad8fd4ede9e99024f
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
